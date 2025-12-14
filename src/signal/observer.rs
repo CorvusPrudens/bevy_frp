@@ -1,11 +1,11 @@
-use bevy_added::{
-    QueryObserver, SpawnQueryObserver, Start, TriggerQueryObserver, observer::QueryObserverAccess,
-};
 use bevy_ecs::{
     lifecycle::HookContext,
     prelude::*,
     query::{QueryData, QueryFilter},
     world::DeferredWorld,
+};
+use bevy_query_observer::{
+    QueryObserver, SpawnQueryObserver, Start, TriggerQueryObserver, observer::QueryObserverAccess,
 };
 use core::marker::PhantomData;
 
